@@ -41,7 +41,8 @@ function loadHotGame(dataJson, category){
         for (var j=listHotGames.length-1; j>=0; j--) {
             var item = listHotGames[j];
             var img = "/images/icon/"+item.img;
-            var slug = "/play/" + item.slug + ".html";
+            var slug = item.slug + ".html";
+			/*var slug = "/play/" + item.slug + ".html";*/
             var title = item.title;
             const htmlItem = `
                 <div class="col-lg-12 col-md-4 col-6 list-grid">
@@ -80,7 +81,8 @@ function loadNewGame(dataJson, category){
         for (var j=listDataGames.length-1; j>=0; j--) {
             var item = listDataGames[j];
             var img = "/images/icon/"+item.img;
-            var slug = "/play/" + item.slug + ".html";
+            var slug = item.slug + ".html";
+			/*var slug = "/play/" + item.slug + ".html";*/
             var title = item.title;
             const htmlItem = `
                 <a href="${slug}">
@@ -116,7 +118,8 @@ function loadPopularGame(dataJson, category){
         for (var j=listDataGames.length-1; j>=0; j--) {
             var item = listDataGames[j];
             var img = "/images/icon/"+item.img;
-            var slug = "/play/" + item.slug + ".html";
+            var slug = item.slug + ".html";
+			/*var slug = "/play/" + item.slug + ".html";*/
             var title = item.title;
             const htmlItem = `
                 <a href="${slug}">
@@ -153,7 +156,8 @@ function loadYouLikeGame(dataJson){
         for (var j=listDataGames.length-1; j>=0; j--) {
             var item = listDataGames[j];
             var img = "/images/icon/"+item.img;
-            var slug = "/play/" + item.slug + ".html";
+            var slug = item.slug + ".html";
+			/*var slug = "/play/" + item.slug + ".html";*/
             var title = item.title;
             const htmlItem = `
                 <a href="${slug}">
